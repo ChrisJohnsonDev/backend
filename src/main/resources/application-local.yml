@@ -1,0 +1,11 @@
+amazon:
+  dynamodb:
+    endpoint: http://localhost:8000
+    region: ${AWS_REGION:eu-west-1}
+    accessKey: dummy
+    secretKey: dummy
+app:
+  clients:
+    metro-blue:
+      api-key: ${BASIC_API_KEY}
+
