@@ -1,5 +1,6 @@
 package com.skypal.backend
 
+import com.skypal.backend.provider.api.MeteoblueClient
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -7,6 +8,7 @@ import org.springframework.boot.runApplication
 class BackendApplication
 
 fun main(args: Array<String>) {
-
-	runApplication<BackendApplication>(*args)
+	val test = MeteoblueClient()
+	val testResponse = test.fetchWeatherData()
+	print(testResponse)
 }

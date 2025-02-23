@@ -23,13 +23,15 @@ data class Forecast(
     @field:NotBlank
     var pressure: Double? = null,
     @field:NotBlank
-    var windSpeed: Int? = null,
+    var windSpeed: Double? = null,
     @field:NotBlank
     var windDirection: String? = null,
+    @field:NotBlank
+    var precipitation: Double? = null,
+    @field:NotBlank
+    var precipitationProbability: Int?,
     @field:NotBlank
     var iconCode: String? = null,
     @field:NotBlank
     var recordedAt: String? = null,
-    @field:NotBlank
-    var totalCloudCover: Int? = null
 )
